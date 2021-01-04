@@ -2,21 +2,22 @@ import React from 'react';
 import "./style.css";
 
 const Nav = () => {
-    componentDidMount() {
-        window.addEventListener("scroll", this.handleScroll);
-      }
     
-      componentWillUnmount() {
-        window.removeEventListener("scroll", this.handleScroll);
-      }
+    // componentDidMount() {
+    //     window.addEventListener("scroll", this.handleScroll);
+    //   }
     
-      handleScroll = () => {
-        if (window.scrollY > 20) {
-          document.querySelector(".opening-nav").className = "me";
-        } else {
-          document.querySelector(".opening-nav").className = "us";
-        }
-      };
+    //   componentWillUnmount() {
+    //     window.removeEventListener("scroll", this.handleScroll);
+    //   }
+    
+    //   handleScroll = () => {
+    //     if (window.scrollY > 20) {
+    //       document.querySelector(".opening-nav").className = "me";
+    //     } else {
+    //       document.querySelector(".opening-nav").className = "us";
+    //     }
+    //   };
     return (
         <>
          <nav class="opening-nav">
@@ -38,7 +39,7 @@ const Nav = () => {
                  </li>
              </ul>
          </nav>
-         <nav class="overlay-nav">
+         {/* <nav class="overlay-nav">
              <div class="overlay-nav-content">
                 <a href="#" class="logo">
                     <img src="images/outlook-icon.jpg" alt="outlook-icon"/>
@@ -55,7 +56,7 @@ const Nav = () => {
                     </li>
                 </ul>
              </div>
-        </nav>
+        </nav> */}
      </>
     )
 }
